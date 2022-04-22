@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/login/logout" style="float: right;"><button>Logout</button></a>
+    <h1>this is contact page</h1><br>
+    <a href="/contact/contactNew"><button>New Contact</button></a>
+    <%if(contact){%>
+<%for(let x of contact){%>
+    
+
+    
+    <hr>
+    <p>Name:<%=x.Name%></p>
+    <p>Contact Number:<%=x.phoneNumber%></p>
+    <a href="/contact/contactNew"><button>New Contact</button></a>
+    <a href="/contact/contactEdit/<%=x.id%>"><button>Edit Contact</button></a>
+    <a href="/contact/contactDelete/<%=x.id%>"><button>Delete the contact</button></a>
+    <hr>
+    <br>
+   
+<%}%>
+<%}else{%>
+   
+    <%}%>
+</body>
+</html>

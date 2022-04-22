@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>create new card</h1>
+    <br>
+    <form action="/work/boardDetail/<%=board.id%>" method="post">
+    <input type="text" required placeholder="title" name="cardTitle"><br>
+    <input type="text" required placeholder="date" name="cardDate">
+    <input type="text" required placeholder="description" name="cardDesc">
+    <button type="submit">Create card</button>
+    </form>
+<script>
+console.log(`<%=board.id%>`);
+
+
+</script>
+
+
+</body>
+</html>
